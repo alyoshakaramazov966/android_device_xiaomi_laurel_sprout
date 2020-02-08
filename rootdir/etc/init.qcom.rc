@@ -5,6 +5,8 @@ on post-fs
     mount none /system/lib/soundfx/libvolumelistener.so /vendor/lib/soundfx/libvolumelistener.so bind
     mount none /system/lib64/hw/power.qcom.so /vendor/lib64/hw/power.qcom.so bind
     mount none /system/overlay/BluetoothResCommon.apk /vendor/overlay/BluetoothResCommon.apk bind
+    mount none /system/etc/goodix/BMatrix.so /mnt/vendor/persist/goodix/BMatrix.so bind
+    mount none /system/etc/goodix/caliParamsInfo.so /mnt/vendor/persist/goodix/caliParamsInfo.so bind
 
 on boot
     chown system system /dev/input/event2

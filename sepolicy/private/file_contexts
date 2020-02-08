@@ -15,6 +15,10 @@
 # FOD related nodes
 /sys/class/touch/tp_dev/fod_status                       u:object_r:sysfs_tp_fodstatus:s0
 
+# Fingerprint
+/system/etc/goodix(/.*)?      u:object_r:fingerprint_data_file:s0
+
+
 # HALs
 /system/bin/hw/lineage\.biometrics\.fingerprint\.inscreen@1.0-service\.xiaomi_trinket    u:object_r:hal_fod_trinket_exec:s0
 /system/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_trinket    u:object_r:hal_light_trinket_exec:s0
